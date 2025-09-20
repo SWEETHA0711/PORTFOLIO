@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetha - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>Sweetha A</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="greeting">
+                        <h1>Hi, I am <span class="name">Sweetha A</span></h1>
+                        <div class="typing-container">
+                            <span class="typing-text"></span>
+                        </div>
+                    </div>
+                    <p class="description">
+                        Passionate developer creating amazing digital experiences with modern technologies.
+                        Welcome to my creative space where innovation meets functionality.
+                    </p>
+                    <div class="home-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('about')">
+                            <i class="fas fa-user"></i> About Me
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('projects')">
+                            <i class="fas fa-code"></i> My Work
+                        </button>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <img src="portfolio-img.jpeg" alt="Developer" class="profile-img">
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s;"><i class="fa-brands fa-java"></i></div>
+                            <div class="floating-icon" style="--delay: 1s;"><i class="fab fa-js-square"></i></div>
+                            <div class="floating-icon" style="--delay: 2s;"><i class="fab fa-python"></i></div>
+                            <div class="floating-icon" style="--delay: 3s;"><i class="fab fa-css3-alt"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="skills-preview">
+                <h3>Technologies I Work With</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item" data-skill="React">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item" data-skill="Python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item" data-skill="Node.js">
+                        <i class="fa-brands fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-item" data-skill="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item" data-skill="HTML5">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Know Who I'm</h2>
+                <p>Discover my journey and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>My Journey</h3>
+                        <div class="education-info">
+                            <div class="education-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Bachelor of Techlology in Artificial Intelligence and Data Science</h4>
+                                    <p>Sri Venkateswaraa College of Technology</p>
+                                    <span class="year">2022 - 2026</span>
+                                </div>
+                            </div>
+                            <!-- <div class="education-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Full Stack Development</h4>
+                                    <p>Specialized in modern web technologies</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="about-description">
+                            <p>
+                                I'm a passionate Undergraduate student in Artificial Intelligence and Data Science with a deep love for building innovative digital solutions. What started as curiosity has grown into a strong foundation in programming, data-driven technologies, and intelligent systems.
+
+                            <p>
+                             
+                                I thrive on writing clean, efficient code and developing user-centric experiences that solve real-world problems. I'm always eager to explore new technologies, dive into challenging projects, and grow as a developer and problem-solver in the ever-evolving tech landscape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-categories">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Frontend</h4>
+                            <div class="skill-logos">
+                               
+                                <div class="skill-logo" title="JavaScript">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-logo" title="CSS3">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-logo" title="HTML5">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-server"></i> Backend</h4>
+                            <div class="skill-logos">
+                                <div class="skill-logo" title="Java">
+                                    <i class="fa-brands fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="skill-logo" title="Python">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-logo" title="MongoDB">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i> Tools</h4>
+                            <div class="skill-logos">
+                                <div class="skill-logo" title="Git">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-logo" title="VS Code">
+                                    <i class="fas fa-code"></i>
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="skill-logo" title="Figma">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>Explore my latest work and creations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/IMG-1.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/VULGARITY-PREDICTION-WEB-APP" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>VULGARITY DETECTION IN CHAT APPLICATION USING DEEP LEARNING</h3>
+                        <p>This project is a real-time vulgarity detection chat app that classifies messages into six categories like Toxicity, Obscene, and Threat using TensorFlow & Keras. Built with Flask + Socket.IO and a simple web UI, it alerts users when toxicity exceeds 40%, ensuring safe communication.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">python</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                             <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/IMG-2.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/TETHERFI-INTERNSHIP" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-POWERED WEB CHAT APPLICATION</h3>
+                        <p>This project is a real-time AI-powered chat app enabling gesture, speech, and text interaction. It uses TensorFlow.js for gesture detection, Tesseract.js for OCR, and sentiment analysis for chat tone. Built with HTML, CSS, JS, and Socket.IO for dynamic messaging.
+</p>
+                        <div class="project-tech">
+                             <span class="tech-tag">python</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                             <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/IMG-3.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/plant-disease-detection" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PLANT DISEASE DETECTION USING DEEP LEARNING</h3>
+                        <p>This project is an AI-powered image classifier that detects plant diseases from leaf images. Using a Flask web app, it preprocesses images and predicts disease type with a TensorFlow CNN model, providing instant diagnosis to help farmers manage crops effectively.</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">python</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                             <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/IMG-4.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/MAINFLOW-DATA-ANALYSIS-INTERNSHIP-TASK_06" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DISNEY PLUS DATA ANALYTICS: TIME SERIES, SENTIMENT, CLUSTERING & CLASSIFICATION</h3>
+                        <p>This project analyzes Disney Plus titles using time series forecasting to track content additions, sentiment analysis on descriptions, K-Means clustering for content grouping, and Random Forest classification to predict show types. It combines Python libraries for data preprocessing, visualization, and machine learning to extract actionable insights.</p>
+                        <div class="project-tech">
+                              <span class="tech-tag">python</span>
+                       
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/PROJ5.jpeg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/MAINFLOW-DATA-ANALYSIS-INTERNSHIP-TASK_05" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HEART DISEASE PREDICTION USING POLYNOMIAL FEATURES, PCA AND RANDOM FOREST</h3>
+                        <p>
+           This project predicts heart disease using polynomial feature engineering, PCA for dimensionality reduction, and Random Forest classification. It identifies key features like chest pain and calcium levels, achieving up to 98.5% accuracy, demonstrating robust performance with original, PCA-transformed, and top-feature datasets.</p>
+                        <div class="project-tech">
+                          <span class="tech-tag">python</span>
+                       
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/IMG-6.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/MAINFLOW-DATA-ANALYSIS-INTERNSHIP-TASK_02" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>INDUSTRIAL PROCESS DATA CLEANING AND PREPROCESSING FOR PREDICTIVE ANALYSIS</h3>
+                        <p>This project involves cleaning, preprocessing, and handling missing values in industrial process data. Techniques include duplicate removal, null value treatment (zero, forward, backward fill), and outlier detection using IQR. This foundational step enables accurate modeling, analysis, and predictive maintenance in manufacturing systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">python</span>
+                          
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/titanic.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/CODSOFT-TASK1" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TITANIC SURVIVAL PREDICTION USING RANDOM FOREST CLASSIFIER</h3>
+                        <p>This project predicts Titanic passenger survival using a Random Forest model. It involves data cleaning, feature engineering (including family size), encoding categorical variables, model training, evaluation with accuracy and classification metrics, and visualization of feature importance for interpretability.</p>
+                        <div class="project-tech">
+                             <span class="tech-tag">python</span>
+                          
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/sentiment.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/PRODIGY_DS_04" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SOCIAL MEDIA SENTIMENT ANALYSIS DASHBOARD</h3>
+                        <p>This project analyzes social media sentiment across platforms like Facebook, Twitter, and Instagram. It visualizes country-wise sentiment distribution, yearly text trends, retweets, likes, and engagement by time. The insights highlight public emotions, platform influence, and sentiment growth, supporting strategies for audience engagement, brand monitoring, and trend analysis.
+</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/world-popul.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/PRODIGY_DS_01/tree/main" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>WORLD POPULATION ANALYSIS 2022 DASHBOARD</h3>
+                        <p>This project explores world population distribution and growth trends in 2022. It visualizes country-wise population, continent-wise growth rates, and population percentages. The analysis highlights Asia and Africa as dominant population centers while also examining smaller regions, offering insights into demographic patterns and global population dynamics.</p>
+                        <div class="project-tech">
+                          <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/unemployment.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/OIBSIP-TASK_02" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>UNEMPLOYMENT RATE PREDICTION USING RANDOM FOREST REGRESSOR</h3>
+                        <p>This project analyzes unemployment data in India and predicts unemployment rates using the Random Forest Regressor model. The dataset was cleaned, encoded, and split for training and testing. The model effectively captured trends, providing reliable predictions with a low mean squared error.
+</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/sales.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/OIBSIP-TASK_05" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SALES PREDICTION USING LINEAR REGRESSION ON ADVERTISING DATA</h3>
+                        <p>This project involves building a sales prediction model using linear regression on advertising data. It includes data cleaning, exploratory analysis, and model training. The relationship between advertising mediums and sales is analyzed, and model performance is evaluated using R² score and RMSE metrics.</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/road.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/PRODIGY_DS_05/tree/main" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ADDIS ABABA CITY ROAD ACCIDENT ANALYSIS DASHBOARD</h3>
+                        <p>This project presents an interactive dashboard analyzing road accidents in Addis Ababa. It highlights accident severity, causes, vehicle movements, and driver demographics. The analysis uncovers patterns in light conditions, road surfaces, and accident-prone areas, providing valuable insights for improving road safety and reducing accident risks.
+</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/movie-rate.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/CODSOFT-TASK2" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>MOVIE RATING PREDICTION USING LINEAR REGRESSION AND CATEGORICAL FEATURES</h3>
+                        <p>This project predicts movie ratings using a linear regression model trained on categorical features such as genre, director, and actors. It includes data preprocessing with one-hot encoding, model training, evaluation with RMSE, and visualization of actual vs. predicted ratings and residuals.
+</p>
+                        <div class="project-tech">
+                         <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/mail-spam.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/OIBSIP-TASK_04" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EMAIL SPAM DETECTION USING LOGISTIC REGRESSION</h3>
+                        <p>This project uses Logistic Regression to accurately classify emails as spam or ham. The model is trained on labeled SMS data using TF-IDF for feature extraction. With over 96% accuracy, it helps in filtering unwanted messages and enhancing email security effectively.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                              <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/iris.jpeg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/OIBSIP-TASK_01" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>IRIS FLOWER SPECIES CLASSIFICATION USING K-NEAREST NEIGHBORS</h3>
+                        <p>This project implements K-Nearest Neighbors (KNN) to classify Iris flower species based on sepal and petal measurements. The data was clean with no missing values, and after scaling, the model achieved perfect accuracy, demonstrating excellent</p>
+                        <div class="project-tech">
+                         <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/house-img.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/MAINFLOW-DATA-ANALYSIS-INTERNSHIP-TASK_03" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HOUSEHOLD DATA VISUALIZATION AND CLEANING FOR SOCIO-ECONOMIC ANALYSIS</h3>
+                        <p>This project focuses on analyzing household socio-economic data from 2008 to 2020. It includes data cleaning by checking for nulls and duplicates, followed by visualizations like scatterplots, line plots, bar charts, and histograms to explore patterns in ownership, income, and expenditures over time.
+</p>
+                        <div class="project-tech">
+                          <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/CAR.jpg" alt="Weather App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/OIBSIP-TASK_03" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CAR PRICE PREDICTION USING LINEAR REGRESSION AND RANDOM FOREST REGRESSOR</h3>
+                        <p>This project predicts used car prices using two machine learning models: Linear Regression and Random Forest Regressor. After data cleaning and analysis, both models were trained and evaluated, with Random Forest achieving superior accuracy and lower error, making it ideal for price prediction tasks.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/GUESSGAME.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/WEB-DEVELOPMENT-PRACTISE-PROJECT-15" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>GUESS MY NUMBER GAME</h3>
+                        <p>This project is a number guessing game where players predict a secret number between 1 and 20. Each wrong attempt reduces points. The game ends when guesses run out or the number is correct. High scores are tracked across rounds for challenge.</p>
+                        <div class="project-tech">
+                          <span class="tech-tag">HTML5</span>
+                           <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/food.jpg" alt="Chat Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/WEB-DEVELOPMENT-PRACTISE-PROJECT-14" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FAMYFOOD – RESPONSIVE FOOD DELIVERY WEBSITE</h3>
+                        <p>This project is a responsive food delivery website named Famyfood, designed with modern UI and smooth navigation. It highlights services, meal plans, testimonials, and a sign-up form integrated with Netlify. Built using HTML, CSS, and JavaScript, it delivers an interactive and engaging user experience.</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">HTML5</span>
+                           <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="proj-sec-imgs/pig.png" alt="Data Visualization">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SWEETHA0711/WEB-DEVELOPMENT-PRACTISE-PROJECT-17" target="_blank" class="github-btn">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="live-demo-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PIG GAME</h3>
+                        <p>This project is a two-player dice game where players roll to accumulate points. Rolling a 1 switches turns. Using the hold button adds points to the total score, and surpassing 100 wins the game. A black background marks victory, with reset enabled.</p>
+                        <div class="project-tech">
+                           <span class="tech-tag">HTML5</span>
+                           <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Resume</h2>
+                <p>Download my complete professional profile</p>
+            </div>
+            <div class="resume-content">
+                
+                <div class="resume-actions">
+                    <div class="resume-info">
+                        <h3>Professional Summary</h3>
+                        <p>
+                            A comprehensive overview of my educational background, technical skills, 
+                            project experiences, and professional achievements. This resume showcases 
+                            my journey as a Computer Science student and aspiring developer.
+                        </p>
+                        <div class="resume-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Years of Study</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-section">
+                        <!-- <button class="download-btn" onclick="downloadResume()">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                        <button class="view-btn" onclick="viewResume()">
+                            <i class="fas fa-eye"></i>
+                            View Full Resume
+                        </button> -->
+                        
+                        <a href="SWEETHA_RESUME.pdf" download class="download-btn">
+                                    <i class="fas fa-download"></i>
+                                    Download Resume
+                        </a>
+                        <a href="SWEETHA_RESUME.pdf" target="_blank" class="view-btn">
+                                    <i class="fas fa-eye"></i>
+                                    View Full Resume
+                        </a>
+
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; <span id="current-year"></span> Sweetha. All rights reserved.</p>
+
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/SWEETHA0711?tab=repositories" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sweetha-a-a2826a294" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sweetha0711@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js">// Set current year dynamically in footer
+
+</script>
+</body>
+</html>
